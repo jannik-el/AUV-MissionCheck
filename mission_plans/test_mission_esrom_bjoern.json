@@ -1,0 +1,250 @@
+{
+ "mission": {
+  "name": "test_mission_esrom_bjoern",
+  "comment": "15.05.2024 11:05:52",
+  "devices": [
+   {
+    "serialNumber": "SUSDA14_2302002",
+    "name": "SCM",
+    "type": "DEVICE_SURFACE",
+    "mapTracesColor": "#ff0055ff",
+    "mapTextColor": "#ff000000",
+    "home": {},
+    "maxDepth": 300,
+    "payloadKeys": [
+     0
+    ]
+   },
+   {
+    "serialNumber": "NEMOSENS_2304001",
+    "name": "Nemo",
+    "type": "DEVICE_DRONE",
+    "mapTracesColor": "#ff15ff11",
+    "mapTextColor": "#ff000000",
+    "paths": [
+     {
+      "name": "Path2",
+      "stages": [
+       {
+        "name": "Start",
+        "latitude": 55.96952679278639,
+        "longitude": 12.367990461620794,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 1,
+         "waypoint": {
+          "radius": 10,
+          "timeout": 120
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path8",
+      "stages": [
+       {
+        "name": "WP1",
+        "latitude": 55.969242833513526,
+        "longitude": 12.36638016081281,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 1,
+         "waypoint": {
+          "radius": 10,
+          "timeout": 120
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "RailFamily1",
+      "type": "PATH_RAIL",
+      "stages": [
+       {
+        "name": "J1 A",
+        "latitude": 55.969515622198024,
+        "longitude": 12.36680910275126,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 1,
+         "railBegin": {
+          "timeout": 120,
+          "radius": 10
+         }
+        }
+       },
+       {
+        "name": "J1 B",
+        "latitude": 55.970475070716994,
+        "longitude": 12.368499381680946,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 1,
+         "railEnd": {
+          "timeout": 360,
+          "radius": 10
+         }
+        }
+       },
+       {
+        "name": "J2 A",
+        "latitude": 55.970700981965692,
+        "longitude": 12.368147657077188,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 1,
+         "railBegin": {
+          "timeout": 150,
+          "radius": 10
+         }
+        }
+       },
+       {
+        "name": "J2 B",
+        "latitude": 55.969741533495345,
+        "longitude": 12.36645739247866,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 1,
+         "railEnd": {
+          "timeout": 250,
+          "radius": 10
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path5",
+      "stages": [
+       {
+        "name": "Surface",
+        "latitude": 55.96970784613859,
+        "longitude": 12.366684389492624,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 0,
+         "surface": {
+          "timeout": 120
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path7",
+      "stages": [
+       {
+        "name": "End",
+        "latitude": 55.969398405167588,
+        "longitude": 12.36824554504784,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 1,
+         "waypoint": {
+          "radius": 10,
+          "timeout": 250
+         }
+        }
+       }
+      ]
+     }
+    ],
+    "home": {
+     "latitude": 55.969275549583244,
+     "longitude": 12.368672870775265,
+     "velocity": 1.5,
+     "depth": 1
+    },
+    "maxDepth": 300,
+    "payloadKeys": [
+     1,
+     2
+    ]
+   }
+  ],
+  "dictionary": {
+   "messages": [
+    {
+     "text": "GOING UP",
+     "key": {
+      "value": "1"
+     }
+    },
+    {
+     "text": "GOING DOWN",
+     "key": {
+      "value": "2"
+     }
+    },
+    {
+     "text": "ALL IS GOOD",
+     "key": {
+      "value": "3"
+     }
+    },
+    {
+     "text": "ROGER",
+     "key": {
+      "value": "4"
+     }
+    }
+   ]
+  },
+  "racamCelerity": 1450,
+  "editDatetime": 1715846669,
+  "store": {
+   "0": {
+    "name": "RACAM_SCM",
+    "racam": {
+     "modem": {
+      "frequency": 18000,
+      "gain": -3,
+      "period": 6
+     },
+     "localize": {},
+     "celerity": 1450,
+     "transducerDepth": 3
+    }
+   },
+   "2": {
+    "name": "AML_1",
+    "aml": {
+     "info": {
+      "optionEnable": true
+     }
+    }
+   },
+   "1": {
+    "name": "RACAM_Nemo",
+    "racam": {
+     "modem": {
+      "numid": 1,
+      "frequency": 18000,
+      "gain": -3,
+      "delay": 3,
+      "period": 6
+     },
+     "localize": {},
+     "celerity": 1450,
+     "transducerDepth": 3
+    }
+   }
+  }
+ },
+ "devicesui": [
+  {
+   "mapColor": "#ffff02bc"
+  },
+  {
+   "mapColor": "#ffaa00ff"
+  }
+ ],
+ "storeui": {
+  "2": {},
+  "0": {},
+  "1": {}
+ }
+}

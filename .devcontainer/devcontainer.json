@@ -1,0 +1,18 @@
+{
+    "name": "AUV-MissionCheck-devcontainer",
+    "appPort": [8501], // Replace with the port your application exposes
+    "dockerFile": "../app/Dockerfile",
+    "overrideCommand": true,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "GitHub.copilot-chat",
+                "ms-python.python",
+                "ms-azuretools.vscode-docker",
+                "GitHub.copilot",
+                "njpwerner.autodocstring"
+            ]
+        }
+    }
+  }
+  

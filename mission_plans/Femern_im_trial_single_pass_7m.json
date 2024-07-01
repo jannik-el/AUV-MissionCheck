@@ -1,0 +1,314 @@
+{
+ "mission": {
+  "name": "Femern_im_trial_single_pass_7m",
+  "comment": "13.06.2024 09:39:03",
+  "devices": [
+   {
+    "serialNumber": "SUSDA14_2302002",
+    "name": "SCM",
+    "type": "DEVICE_SURFACE",
+    "mapTracesColor": "#ff000000",
+    "mapTextColor": "#ff000000",
+    "home": {},
+    "maxDepth": 300,
+    "payloadKeys": [
+     0
+    ]
+   },
+   {
+    "serialNumber": "NEMOSENS_2304001",
+    "name": "Nemo",
+    "type": "DEVICE_DRONE",
+    "mapTracesColor": "#ffff0000",
+    "mapTextColor": "#ff000000",
+    "paths": [
+     {
+      "name": "Path8",
+      "stages": [
+       {
+        "name": "Start",
+        "latitude": 54.601609131619753,
+        "longitude": 11.340233376064447,
+        "navigation": {
+         "velocity": 2,
+         "depth": 3,
+         "waypoint": {
+          "radius": 25,
+          "timeout": 500
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path2",
+      "stages": [
+       {
+        "name": "Waypoint in",
+        "latitude": 54.601293662996007,
+        "longitude": 11.337227298345047,
+        "navigation": {
+         "velocity": 2,
+         "depth": 7,
+         "waypoint": {
+          "radius": 25,
+          "timeout": 350
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path3",
+      "stages": [
+       {
+        "name": "Survey start",
+        "latitude": 54.600491762395066,
+        "longitude": 11.333194639033575,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 7,
+         "waypoint": {
+          "radius": 15,
+          "timeout": 450
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path4",
+      "stages": [
+       {
+        "name": "Survey end",
+        "latitude": 54.59820491649171,
+        "longitude": 11.331312277828749,
+        "navigation": {
+         "velocity": 1,
+         "depth": 7,
+         "waypoint": {
+          "radius": 15,
+          "timeout": 600
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path5",
+      "stages": [
+       {
+        "name": "Waypoint out",
+        "latitude": 54.595914590396262,
+        "longitude": 11.332499471179661,
+        "navigation": {
+         "velocity": 2,
+         "depth": 7,
+         "waypoint": {
+          "radius": 25,
+          "timeout": 200
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path6",
+      "stages": [
+       {
+        "name": "End",
+        "latitude": 54.595079143313725,
+        "longitude": 11.334463921490913,
+        "navigation": {
+         "velocity": 2,
+         "depth": 7,
+         "waypoint": {
+          "radius": 25,
+          "timeout": 300
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path7",
+      "stages": [
+       {
+        "name": "Surface",
+        "latitude": 54.594778039395464,
+        "longitude": 11.335338222521482,
+        "navigation": {
+         "velocity": 1.5,
+         "depth": 0,
+         "surface": {
+          "timeout": 180
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path9",
+      "stages": [
+       {
+        "name": "Duck",
+        "latitude": 54.594566872587116,
+        "longitude": 11.336011091264488,
+        "navigation": {
+         "velocity": 1,
+         "depth": 1,
+         "duck": {
+          "timeout": 120
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path10",
+      "stages": [
+       {
+        "name": "Waypoint recovery",
+        "latitude": 54.594072178969618,
+        "longitude": 11.337773968940299,
+        "navigation": {
+         "velocity": 2,
+         "depth": 7,
+         "waypoint": {
+          "radius": 25,
+          "timeout": 200
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path11",
+      "stages": [
+       {
+        "name": "Surface",
+        "latitude": 54.591747438632119,
+        "longitude": 11.346623006746736,
+        "navigation": {
+         "velocity": 2,
+         "depth": 7,
+         "waypoint": {
+          "radius": 25,
+          "timeout": 200
+         }
+        }
+       }
+      ]
+     },
+     {
+      "name": "Path12",
+      "stages": [
+       {
+        "name": "Recovery",
+        "latitude": 54.591591451647254,
+        "longitude": 11.34730837466882,
+        "navigation": {
+         "velocity": 2,
+         "depth": 0,
+         "surface": {
+          "timeout": 200
+         }
+        }
+       }
+      ]
+     }
+    ],
+    "home": {
+     "latitude": 54.597048720429818,
+     "longitude": 11.343879092686938,
+     "velocity": 1
+    },
+    "maxDepth": 300,
+    "payloadKeys": [
+     2
+    ]
+   }
+  ],
+  "dictionary": {
+   "messages": [
+    {
+     "text": "GOING UP",
+     "key": {
+      "value": "1"
+     }
+    },
+    {
+     "text": "GOING DOWN",
+     "key": {
+      "value": "2"
+     }
+    },
+    {
+     "text": "ALL IS GOOD",
+     "key": {
+      "value": "3"
+     }
+    },
+    {
+     "text": "ROGER",
+     "key": {
+      "value": "4"
+     }
+    }
+   ]
+  },
+  "racamCelerity": 1480,
+  "editDatetime": 1718371444,
+  "store": {
+   "2": {
+    "name": "RACAM_NewDevice2",
+    "racam": {
+     "modem": {
+      "numid": 1,
+      "frequency": 18000,
+      "gain": -3,
+      "delay": 3,
+      "period": 6
+     },
+     "localize": {},
+     "celerity": 1480,
+     "transducerDepth": 3
+    }
+   },
+   "0": {
+    "name": "RACAM_NewDevice1",
+    "racam": {
+     "modem": {
+      "frequency": 18000,
+      "gain": -3,
+      "period": 6
+     },
+     "localize": {},
+     "celerity": 1480,
+     "transducerDepth": 3
+    }
+   },
+   "1": {
+    "name": "AML-1",
+    "aml": {
+     "info": {
+      "optionEnable": true
+     }
+    }
+   }
+  }
+ },
+ "devicesui": [
+  {
+   "mapColor": "#ffff0000"
+  },
+  {
+   "mapColor": "#ffaa55ff"
+  }
+ ],
+ "storeui": {
+  "0": {},
+  "2": {},
+  "1": {}
+ }
+}
