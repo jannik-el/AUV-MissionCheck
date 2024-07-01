@@ -7,7 +7,7 @@ import pandas as pd
 import json
 import folium
 import plotly.express as px
-from streamlit_folium import st_folium
+from streamlit_folium import st_folium, folium_static
 
 load_dotenv()
 
@@ -73,7 +73,6 @@ def main():
                     st.error("Timeout Validation Failed")
 
                 max_depth_pass = check_max_depth(waypoints_df, max_depth)
-                print(max_depth_pass)
                 if max_depth_pass:
                     st.success("Max Depth Validation Passed")
                 else:
@@ -153,9 +152,10 @@ def main():
             folium.LayerControl().add_to(map)
 
             map.fit_bounds(map.get_bounds())
-            
+
             st.write("Mission Plan")
-            st_data = st_folium(map, width=800, height=400)
+            # st_data = st_folium(map, width=800, height=400)
+            folium_static(map)
 
             st.write("Mission Plan Cross-section")
 
